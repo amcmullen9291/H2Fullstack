@@ -37,8 +37,8 @@ public class PersonController {
     @PutMapping("/{id}")
     public ResponseEntity updatePerson(@PathVariable Long id, @RequestBody Person person) {
         Person currentPerson = personRepository.findById(id).orElseThrow(RuntimeException::new);
-        currentPerson.setFirstName(person.getFirstName());
-        currentPerson.setLastName(person.getLastName());
+        currentPerson.setFirst_name(person.getFirst_name());
+        currentPerson.setLast_name(person.getLast_name());
         currentPerson.setEmail(person.getEmail());
         currentPerson = personRepository.save(person);
 

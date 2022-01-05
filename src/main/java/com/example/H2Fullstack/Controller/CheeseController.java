@@ -65,12 +65,8 @@ public class CheeseController {
         return response;
     }
 
-    @GetMapping("beverages/{id}")
-    @CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3000", " http://192.168.1.69:3000"})
-    public Map<Long, Cheese> selectedBeverage(@PathVariable long id)throws ResourceNotFoundException{
-        Cheese cheese = cheeseRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Id not found"));
-        Map<Long, Cheese> response = new HashMap<>();
-        response.put(id, cheese);
-        return response;
+    @GetMapping("/{id}")
+    public Cheese getCheese(@PathVariable Long id) {
+        return cheeseRepository.findById(id).orElseThrow(RuntimeException::new);
     }
 }

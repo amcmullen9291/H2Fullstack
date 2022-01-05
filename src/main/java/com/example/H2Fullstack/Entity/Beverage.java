@@ -10,34 +10,34 @@ public class Beverage {
     private long id;
 
     @Column(name = "beverage")
-    private String beverageName;
+    private String beverage_name;
 
     @Column(name = "cheese1")
-    private String cheese1Name;
+    private String cheese1_name;
 
     @Column(name = "cheese2")
-    private String cheese2Name;
+    private String cheese2_name;
 
     @Column(name = "cheese3")
-    private String cheese3Name;
+    private String cheese3_name;
 
     @Column(name = "cheese4")
-    private String cheese4Name;
+    private String cheese4_name;
 
     @Column(name = "cheese5")
-    private String cheese5Name;
+    private String cheese5_name;
 
     public Beverage() {
     }
 
-    public Beverage(long id, String beverageName, String cheese1Name, String cheese2Name, String cheese3Name, String cheese4Name, String cheese5Name) {
+    public Beverage(long id, String beverage_name, String cheese1_name, String cheese2_name, String cheese3_name, String cheese4_name, String cheese5_name) {
         this.id = id;
-        this.beverageName = beverageName;
-        this.cheese1Name = cheese1Name;
-        this.cheese2Name = cheese2Name;
-        this.cheese3Name = cheese3Name;
-        this.cheese4Name = cheese4Name;
-        this.cheese5Name = cheese5Name;
+        this.beverage_name = beverage_name;
+        this.cheese1_name = cheese1_name;
+        this.cheese2_name = cheese2_name;
+        this.cheese3_name = cheese3_name;
+        this.cheese4_name = cheese4_name;
+        this.cheese5_name = cheese5_name;
     }
 
     public long getId() {
@@ -45,50 +45,50 @@ public class Beverage {
     }
 
     public String getBeverageName() {
-        return beverageName;
+        return beverage_name;
     }
 
     public void setBeverageName(String beverageName) {
-        this.beverageName = beverageName;
+        this.beverage_name = beverage_name;
     }
 
     public String getCheese1Name() {
-        return cheese1Name;
+        return cheese1_name;
     }
 
-    public void setCheese1Name(String cheese1Name) {
-        this.cheese1Name = cheese1Name;
+    public void setCheese1Name(String cheese1_name) {
+        this.cheese1_name = cheese1_name;
     }
 
     public String getCheese2Name() {
-        return cheese2Name;
+        return cheese2_name;
     }
 
-    public void setCheese2Name(String cheese2Name) {
-        this.cheese2Name = cheese2Name;
+    public void setCheese2Name(String cheese2_name) {
+        this.cheese2_name = cheese2_name;
     }
 
     public String getCheese3Name() {
-        return cheese3Name;
+        return cheese3_name;
     }
 
-    public void setCheese3Name(String cheese3Name) {
-        this.cheese3Name = cheese3Name;
+    public void setCheese3Name(String cheese3_name) {
+        this.cheese3_name = cheese3_name;
     }
 
     public String getCheese4Name() {
-        return cheese4Name;
+        return cheese4_name;
     }
 
-    public void setCheese4Name(String cheese4Name) {
-        this.cheese4Name = cheese4Name;
+    public void setCheese4Name(String cheese4_name) {
+        this.cheese4_name = cheese4_name;
     }
 
     public String getCheese5Name() {
-        return cheese5Name;
+        return cheese5_name;
     }
 
-    public void setCheese5Name(String cheese5Name) {
-        this.cheese5Name = cheese5Name;
+    public void setCheese5Name(String cheese5_name) {
+        this.cheese5_name = cheese5_name;
     }
 }

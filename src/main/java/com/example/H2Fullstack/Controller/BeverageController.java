@@ -11,13 +11,13 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/beverages")
+@RequestMapping("/")
 public class BeverageController {
 
     @Autowired
     private BeverageRepository beverageRepository;
 
-    @GetMapping("/beverages")
+    @GetMapping("/beverages/")
     @CrossOrigin(origins = {"http://localhost:3000", " http://192.168.1.69:3000", "http://localhost:8080"})
     public List<Beverage> getBeverages(){
         return beverageRepository.findAll();
@@ -56,7 +56,7 @@ public class BeverageController {
         return response;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("beverages/{id}")
     public Beverage getBeverage(@PathVariable Long id) {
         return beverageRepository.findById(id).orElseThrow(RuntimeException::new);
     }

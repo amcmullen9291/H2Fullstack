@@ -74,6 +74,8 @@ public class Cheese {
         this.notes = notes;
     }
 
+    public Cheese(){}
+
     public long getId() {
         return id;
     }

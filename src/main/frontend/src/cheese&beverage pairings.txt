@@ -1,0 +1,117 @@
+Todo: definition of aging on hover.
+
+Find a goofy picture of a stinky cheese that lends itself to snooby/stuck-up, etc
+
+Roquefort
+beverage1: Barley Wine -II
+beverage2: Dubbel
+beverage3: IPA - IIII
+beverage4: Lambic -III
+beverage5: Saison -II
+beverage6: Triple -II
+Country of Origin: France
+Type of milk:Sheep
+Aging: At least five months.
+Tasting Notes: It has a moist, crumbly paste, and a sharp, sweet and nutty flavor from the yeast with distinct grassiness from the sheep's milk. It's best eaten in the fall, when cheese made from early spring milk is just coming to market.
+Best Uses: Eaten as is, or with nuts and honey.
+Personal notes:
+
+---------------------------------------NONE
+
+Camembert
+beverage1: Altbier
+beverage2: Bock -II
+beverage3: Brown Ale -II
+beverage4: Doppelbock-III
+beverage5: Pale Ale -IIII
+beverage6: Saison -II
+beverage7: Kölsch -II
+Country of Origin: France (Normandy)
+Type of milk: Cow
+Aging: At least three weeks
+Tasting Notes: You will not find any raw milk Camembert in the U.S. Rich, buttery, and spreadable, Camembert has a mild, mushroomy aroma.
+Best Uses: Eaten as is, on sandwiches, baked in a crust, breaded and deep-fried (giddy-up!)
+
+Chèvre
+beverage1: Hefeweizen -III
+beverage2: Witbier -III
+beverage3: Lambic -III
+beverage4: Weissbock
+beverage5:
+Country of Origin:  France
+Type of milk: Goat
+Aging: Varies
+Tasting Notes: Chèvre is unaged and eaten almost immediately after it is made. Fresh chèvre tends to be moist, bright and acidic, with a lemony flavor and slightly chalky finish in the mouth. 
+Best Uses: Crumbled in salads, breaded and fried, in sandwiches, in macaroni and cheese.
+ 
+Feta
+beverage1: Biere de Garde
+beverage2: Hefeweizen -III
+beverage3: IPA - IIII
+beverage4: Pale Ale -IIII
+beverage5: Weissbier
+beverage6: Witbier -III
+beverage7: ESB -III
+Country of Origin: Greece
+Type of milk: Sheep and goat
+Aging: About 3 months
+Tasting Notes:  A brined cheese, Feta is made by soaking freshly pressed curds in salt water. Tangy and moist, feta can range from completely crumbly to moderately creamy and pairs well with fresh summer fruit.
+Best Uses: Broiled with olive oil. Crumbled in salads. Sandwiches. Use in place of Cotija in tacos and other Mexican dishes.
+ 
+Emmental
+beverage1: Doppelbock -III
+beverage2: Dortmunder Export
+beverage3: Old Ale -II
+beverage4: Oktoberfest -II
+beverage5:Bock -II
+beverage6: ESB -III
+Country of Origin: Switzerland
+Type of milk: Cow
+Aging: At least 4 months
+Tasting Notes: This cheese has a certain sweetness with a piquancy that hits the back of the tongue on the finish. What is more, like all Alpine cheeses, it is a great melter.
+Best Uses: Fondue, grilled cheese, casseroles.
+ 
+Cheddar  (also you have amber lager for a backup)
+beverage1: Pilsner -II
+beverage2: Triple -II
+beverage3: Imperial Stout -II
+beverage4: Pale Ale -IIII
+beverage5: Barley Wine - II
+beverage6: IPA -IIII
+beverage7: Lambic -III
+Country of Origin: England
+Type of milk: Cow
+Aging: No minimum, but good ones are generally aged at least one year
+Tasting Notes: Cheddar cheeses made in a traditional fashion are dry and crumbly in texture, with a deep, tangy, nutty flavor. A far cry from the smooth mild American-style cheddars you might find on top of a burger.
+Best Uses: As is, in sandwiches, grilled cheese, casseroles.
+ 
+Gouda
+beverage1: Brown Ale -II
+beverage2: Doppelbock -III
+beverage3: Witbier -IIII
+beverage4: ESB -III
+beverage5: Imperial Stout -II
+beverage6: Hefeweizen -III
+beverage7: Old Ale -II
+Country of Origin:Netherlands
+Type of milk: Cow
+Aging: At least 4 weeks, but better ones are aged at least a year
+Tasting Notes: Flavor can vary wildly from the mild, creamy wax-coated lunchbox versions to those specimens that are hard, crumbly, and deeply flavorful. Long-aged goudas will have a crunchy texture.
+Best Uses: Young they can be melted. Aged cheeses are best as-is or grated into salads or over casseroles.
+  
+Monterey Jack
+beverage1: Pale Ale -IIII
+beverage2: Oktoberfest -II
+beverage3: Pilsner -II
+beverage4: Kölsch -II
+beverage5: IPA -IIII
+beverage6: Witbier -IIII
+Kind of Cheese:
+Country of Origin: United States of America (California)
+Type of milk: Cow
+Aging: About one month
+Tasting Notes: Very mild and buttery in flavor with a bit of tang, Monterey Jack is one of the few all-American cheeses.
+Best Uses: Melted in casseroles, grilled cheese, over chili, cheese dip, any time you want a good melting cheese.
+
+Aging definition: Cheese ripening, alternatively cheese maturation or affinage, is a process in cheesemaking. It is responsible for the distinct flavour of cheese, and through the modification of "ripening agents", determines the features that define many different varieties of cheeses, such as taste, texture, and body.
+ 

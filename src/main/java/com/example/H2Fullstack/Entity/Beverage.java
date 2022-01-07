@@ -9,22 +9,22 @@ public class Beverage {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "beverage")
+    @Column(name = "beverage_name")
     private String beverage_name;
 
-    @Column(name = "cheese1")
+    @Column(name = "cheese1_name")
     private String cheese1_name;
 
-    @Column(name = "cheese2")
+    @Column(name = "cheese2_name")
     private String cheese2_name;
 
-    @Column(name = "cheese3")
+    @Column(name = "cheese3_name")
     private String cheese3_name;
 
-    @Column(name = "cheese4")
+    @Column(name = "cheese4_name")
     private String cheese4_name;
 
-    @Column(name = "cheese5")
+    @Column(name = "cheese5_name")
     private String cheese5_name;
 
     public Beverage() {

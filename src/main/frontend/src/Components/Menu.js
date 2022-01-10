@@ -7,10 +7,6 @@ let  [ Cheeses, setCheeses ] = useState(null);
 let [ Beverages , setBeverages ] = useState(null);
 let [ defaultValue, setDefaultValue ] = useState(null);
 
-useEffect(() =>{
-setDefaultValue(Cheeses)
-},[])
-
 
 let [ Filter, setFilter ] = useState(null);
 let [ cheeseListings, setCheeseListings ]  = useState(Cheeses);
@@ -20,7 +16,7 @@ const beverageList = fetch('http://localhost:8080/beverages/').then(resp => resp
 
 
 useEffect(() => {
-    Promise.all([beverageList, cheeseList]).then(data => { setBeverages(data[0]); setCheeses(data[1]) })
+    Promise.all([beverageList, cheeseList]).then(data => { setBeverages(data[0]); setCheeses(data[1]); setDefaultValue(data[1]) })
 }, [])
 
 
@@ -39,6 +35,11 @@ function sortCheeses(e, beverageName){
     console.log("Starting dataSet: ", defaultValue);
     setCheeses(newList);
 
+}
+
+function resetTable(e){
+    e.preventDefault();
+    window.location.reload();
 }
 
 
@@ -80,6 +81,8 @@ return (
                       </div>
                     )}
         </div>
+
+        <center><button onClick={(e) => {resetTable(e)}}>Reset List</button></center>
         </>
     )
 }

@@ -1,15 +1,28 @@
 #beverageList{
 float: left;
-border: 2px solid orange;
+border: 2em solid orange;
 width: 150px;
 margin-right: 20px;
+
 }
 
 #cheeseList{
+position: relative;
 float: left;
 margin-left: 50px;
+border: 2em solid yellow;
+background: grey;
+margin-right: 2em;
 }
 
 button{
 border: 2px solid red;
+}
+
+#mainBorder{
+border: 9px solid blue;
+height: 290px;
+width: 550px;
+background-color: grey;
+margin-left: 30%;
 }

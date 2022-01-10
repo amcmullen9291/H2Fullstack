@@ -27,7 +27,7 @@ public class H2FullstackApplication {
 		Cheese cheese2 = new Cheese( 2, "Camembert", "Altbier","Bock","Brown Ale","Doppelbock","Pale Ale","Saison","Kölsch","France (Normandy)","Cow","At least three weeks","You will not find any raw milk Camembert in the U.S. Rich, buttery, and spreadable, Camembert has a mild, mushroomy aroma.","Eaten as is, on sandwiches, baked in a crust, breaded and deep-fried (giddy-up!)","None yet.");
 		cheeseRepository.save(cheese2);
 
-		Cheese cheese3 = new Cheese(3,"Hefeweizen", "Witbier", "Lambic", "Weissbock", "","", "", "", "France", "Goat", "Varies", "Chèvre is unaged and eaten almost immediately after it is made. Fresh chèvre tends to be moist, bright and acidic, with a lemony flavor and slightly chalky finish in the mouth.", "Crumbled in salads, breaded and fried, in sandwiches, in macaroni and cheese.", "");
+		Cheese cheese3 = new Cheese(3,"Chèvre", "Witbier", "Lambic", "Weissbock", "Hefeweizen","", "", "", "France", "Goat", "Varies", "Chèvre is unaged and eaten almost immediately after it is made. Fresh chèvre tends to be moist, bright and acidic, with a lemony flavor and slightly chalky finish in the mouth.", "Crumbled in salads, breaded and fried, in sandwiches, in macaroni and cheese.", "");
 		cheeseRepository.save(cheese3);
 
 		Cheese cheese4 = new Cheese(4, "Feta", "Hefeweizen", "IPA", "Pale Ale", "Weissbier", "Witbier", "ESB", "", "Greece", "Sheep and goat", "About 3 months", "A brined cheese, Feta is made by soaking freshly pressed curds in salt water. Tangy and moist, feta can range from completely crumbly to moderately creamy and pairs well with fresh summer fruit.", "Broiled with olive oil. Crumbled in salads. Sandwiches. Use in place of Cotija in tacos and other Mexican dishes.", "" );

@@ -45,6 +45,8 @@ function resetTable(e){
 
 return (
         <>
+        <div id="mainBorder">
+        <center>
         <div>
          {Cheeses && (
               <div><table id="cheeseList">
@@ -81,7 +83,8 @@ return (
                       </div>
                     )}
         </div>
-
+        </center>
+        </div>
         <center><button onClick={(e) => {resetTable(e)}}>Reset List</button></center>
         </>
     )

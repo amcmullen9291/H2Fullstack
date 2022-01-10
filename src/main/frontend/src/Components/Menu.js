@@ -5,11 +5,15 @@ function Menu() {
 
 let  [ Cheeses, setCheeses ] = useState(null);
 let [ Beverages , setBeverages ] = useState(null);
+let [ defaultValue, setDefaultValue ] = useState(null);
+
+useEffect(() =>{
+setDefaultValue(Cheeses)
+},[])
+
 
 let [ Filter, setFilter ] = useState(null);
-
-const DefaultCheeseList = Cheeses;
-const DefaultBeverageList = Beverages;
+let [ cheeseListings, setCheeseListings ]  = useState(Cheeses);
 
 const cheeseList = fetch('http://localhost:8080/cheeses/').then(resp => resp.json());
 const beverageList = fetch('http://localhost:8080/beverages/').then(resp => resp.json());
@@ -18,15 +22,6 @@ const beverageList = fetch('http://localhost:8080/beverages/').then(resp => resp
 useEffect(() => {
     Promise.all([beverageList, cheeseList]).then(data => { setBeverages(data[0]); setCheeses(data[1]) })
 }, [])
-
-if((Cheeses) && Object.keys(Cheeses).length > 1){
-console.log("Default cheese list set");
-}
-if((Beverages) && Object.keys(Beverages).length > 1){
-console.log("beverages list: ", Beverages);
-let DefaultBeverageList = Beverages;
-console.log("Default beverage list set");
-}
 
 
 async function SortDrinks(e, cheeseName){
@@ -37,11 +32,13 @@ async function SortDrinks(e, cheeseName){
     setFilter(newList);
 }
 
-
-
 function sortCheeses(e, beverageName){
     e.preventDefault();
-    console.log("beverage: ", beverageName);
+    console.log("Beverage: ", beverageName);
+    let newList = defaultValue.filter(cheese => (cheese.beverage1Name === beverageName)||(cheese.beverage2Name === beverageName)|| (cheese.beverage3Name === beverageName)|| (cheese.beverage4Name === beverageName)||(cheese.beverage5Name === beverageName)||(cheese.beverage6Name === beverageName)||(cheese.beverage7Name === beverageName));
+    console.log("Starting dataSet: ", defaultValue);
+    setCheeses(newList);
+
 }
 
 

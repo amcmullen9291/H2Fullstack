@@ -4,7 +4,7 @@ const initialState = {
     Beverages: [],
 };
 
-export const beverageReducers = (state=initialState, {Beverages, payload}) => {
+export const BeverageReducer = (state=initialState, {type, payload}) => {
     switch (type) {
         case ActionTypes.SET_BEVERAGES:
             return { ...state, Beverages: payload};
@@ -13,7 +13,7 @@ export const beverageReducers = (state=initialState, {Beverages, payload}) => {
     }
 };
 
-export const SelectedBeverageReducer = (state={}, {selection, payload}) => {
+export const SelectedBeverageReducer = (state={}, {type, payload}) => {
     switch (type) {
         case ActionTypes.SELECTED_BEVERAGE:
             return { ...state, selection: payload};
@@ -22,7 +22,7 @@ export const SelectedBeverageReducer = (state={}, {selection, payload}) => {
     }
 }
 
-export const filteredBeverageList = (state={}, {filteredList, payload}) => {
+export const filteredBeverageList = (state={}, {type, payload}) => {
     switch (type) {
         case ActionTypes.FILTERED_BEVERAGE_LIST:
             return { ...state, filteredList: payload};

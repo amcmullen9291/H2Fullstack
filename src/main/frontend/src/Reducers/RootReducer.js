@@ -6,10 +6,10 @@ import { CheeseReducer, SelectedCheeseReducer, filteredCheeseList } from './Chee
 const RootReducer = combineReducers({
     Beverages: BeverageReducer,
     SelectedBeverage: SelectedBeverageReducer,
-    ShortBeverageList: FilteredList
+    ShortBeverageList: filteredBeverageList,
     Cheeses: CheeseReducer,
     SelectedCheese: SelectedCheeseReducer,
-    ShortCheeseList: FilteredCheeseList
+    ShortCheeseList: filteredCheeseList
 });
 
 export default RootReducer;

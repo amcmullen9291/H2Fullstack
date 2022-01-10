@@ -4,7 +4,7 @@ const initialState = {
     Cheese: [],
 };
 
-export const CheeseReducer = (state=initialState, {Cheeses, payload}) => {
+export const CheeseReducer = (state=initialState, {type, payload}) => {
     switch (type) {
         case ActionTypes.SET_CHEESES:
             return { ...state, Cheeses: payload};
@@ -13,7 +13,7 @@ export const CheeseReducer = (state=initialState, {Cheeses, payload}) => {
     }
 };
 
-export const SelectedBeverageReducer = (state={}, {selection, payload}) => {
+export const SelectedCheeseReducer = (state={}, {type, payload}) => {
     switch (type) {
         case ActionTypes.SELECTED_CHEESE:
             return { ...state, selection: payload};
@@ -22,7 +22,7 @@ export const SelectedBeverageReducer = (state={}, {selection, payload}) => {
     }
 }
 
-export const filteredCheeseList = (state={}, {filteredList, payload}) => {
+export const filteredCheeseList = (state={}, {type, payload}) => {
     switch (type) {
         case ActionTypes.FILTERED_CHEESE_LIST:
             return { ...state, filteredList: payload};

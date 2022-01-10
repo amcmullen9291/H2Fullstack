@@ -1,34 +1,32 @@
 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Dubbel", "Roquefort");DONE
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("IPA", "Roquefort", "Feta", "Cheddar", "Monterey Jack");DONE
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Lambic", "Roquefort", "Chèvre", "Cheddar");DONE
+Beverage beverage3 = new Beverage(3, "Dubbel", "Roquefort");
+Beverage beverage4 = new Beverage(4, "IPA", "Roquefort", "Feta", "Cheddar", "Monterey Jack", "");
+Beverage beverage5 = new Beverage(5, "Saison", "Roquefort", "Camembert","","","");
+Beverage beverage6 = new Beverage(6, "Lambic", "Roquefort", "Chèvre", "Cheddar","","");
 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Saison", "Roquefort", "Camembert");DONE
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Triple", "Roquefort", "Cheddar");DONE
-
-
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Altbier", "Camembert");DONE
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Bock", "Camembert", "Emmental");DONE
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Brown Ale", "Camembert", "Gouda"); DONE
+Beverage beverage7 = new Beverage(7, "Altbier", "Camembert","","","","");
+Beverage beverage8 = new Beverage(8, "Bock", "Camembert", "Emmental","","","");
+Beverage beverage9 = new Beverage(9, "Brown Ale", "Camembert", "Gouda","","","");
 
 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Doppelbock", "Camembert", "Emmental", "Gouda");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Pale Ale", "Feta", "Cheddar", "Monterey Jack");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Kölsch", "Camembert", "Monterey Jack");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Hefeweizen", "Chèvre", "Feta", "Gouda");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Witbier", "Chèvre", "Feta", "Gouda", "Monterey Jack");
+Beverage beverage10 = new Beverage(10, "Doppelbock", "Camembert", "Emmental", "Gouda","","");
+Beverage beverage11 = new Beverage(11, "Pale Ale", "Feta", "Cheddar", "Monterey Jack","","");
+Beverage beverage12 = new Beverage(12, "Kölsch", "Camembert", "Monterey Jack","","","");
+Beverage beverage13 = new Beverage(13, "Hefeweizen", "Chèvre", "Feta", "Gouda","","");
+Beverage beverage14 = new Beverage(14, "Witbier", "Chèvre", "Feta", "Gouda", "Monterey Jack","");
 
 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Weissbock", "Chèvre");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Weissbier", "Feta");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("ESB", "Feta", "Emmental", "Gouda");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Dortmunder Export", 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Old Ale", "Emmental", "Gouda");
+Beverage beverage15 = new Beverage("Weissbock", "Chèvre","","","","");
+Beverage beverage16 = new Beverage("Weissbier", "Feta","","","","");
+Beverage beverage17 = new Beverage("ESB", "Feta", "Emmental", "Gouda","","");
+Beverage beverage18 = new Beverage("Old Ale", "Emmental", "Gouda","","","");
 
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Oktoberfest", "Emmental", "Monterey Jack");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Pilsner", "Cheddar", "Monterey Jack");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Imperial Stout", "Cheddar", "Gouda");
-INSERT INTO beverages("beverage_name", "cheese1_name", "cheese2_name", "cheese3_name", "cheese4_name", "cheese5_name") VALUES ("Barley Wine", "Roquefort",  "Cheddar");
+Beverage beverage19 = new Beverage(19, "Oktoberfest", "Emmental", "Monterey Jack","","","");
+Beverage beverage20 = new Beverage(20, "Pilsner", "Cheddar", "Monterey Jack","","","");
+Beverage beverage21 = new Beverage(21, "Imperial Stout", "Cheddar", "Gouda","","","");
+Beverage beverage22 = new Beverage(22, "Barley Wine", "Roquefort",  "Cheddar","","","");
+Beverage beverage23 = new Beverage(23, "Triple", "Roquefort", "Cheddar","","");
+
 
 
 

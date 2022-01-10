@@ -50,6 +50,69 @@ public class H2FullstackApplication {
 
 		Beverage beverage2 = new Beverage(2,"Weissbier", "Feta","","","","");
 		beverageRepository.save(beverage2);
+
+		Beverage beverage3 = new Beverage(3, "Dubbel", "Roquefort","","","","");
+		beverageRepository.save(beverage3);
+
+		Beverage beverage4 = new Beverage(4, "IPA", "Roquefort", "Feta", "Cheddar", "Monterey Jack", "");
+		beverageRepository.save(beverage4);
+
+		Beverage beverage5 = new Beverage(5, "Saison", "Roquefort", "Camembert","","","");
+		beverageRepository.save(beverage5);
+
+		Beverage beverage6 = new Beverage(6, "Lambic", "Roquefort", "Chèvre", "Cheddar","","");
+		beverageRepository.save(beverage6);
+
+		Beverage beverage7 = new Beverage(7, "Altbier", "Camembert","","","","");
+		beverageRepository.save(beverage7);
+
+		Beverage beverage8 = new Beverage(8, "Bock", "Camembert", "Emmental","","","");
+		beverageRepository.save(beverage8);
+
+		Beverage beverage9 = new Beverage(9, "Brown Ale", "Camembert", "Gouda","","","");
+		beverageRepository.save(beverage9);
+
+		Beverage beverage10 = new Beverage(10, "Doppelbock", "Camembert", "Emmental", "Gouda","","");
+		beverageRepository.save(beverage10);
+
+		Beverage beverage11 = new Beverage(11, "Pale Ale", "Feta", "Cheddar", "Monterey Jack","","");
+		beverageRepository.save(beverage11);
+
+		Beverage beverage12 = new Beverage(12, "Kölsch", "Camembert", "Monterey Jack","","","");
+		beverageRepository.save(beverage12);
+
+		Beverage beverage13 = new Beverage(13, "Hefeweizen", "Chèvre", "Feta", "Gouda","","");
+		beverageRepository.save(beverage13);
+
+		Beverage beverage14 = new Beverage(14, "Witbier", "Chèvre", "Feta", "Gouda", "Monterey Jack","");
+		beverageRepository.save(beverage14);
+
+		Beverage beverage15 = new Beverage(15, "Weissbock", "Chèvre","","","","");
+		beverageRepository.save(beverage15);
+
+		Beverage beverage16 = new Beverage(16, "Weissbier", "Feta","","","","");
+		beverageRepository.save(beverage16);
+
+		Beverage beverage17 = new Beverage(17, "ESB", "Feta", "Emmental", "Gouda","","");
+		beverageRepository.save(beverage17);
+
+		Beverage beverage18 = new Beverage(18, "Old Ale", "Emmental", "Gouda","","","");
+		beverageRepository.save(beverage18);
+
+		Beverage beverage19 = new Beverage(19, "Oktoberfest", "Emmental", "Monterey Jack","","","");
+		beverageRepository.save(beverage19);
+
+		Beverage beverage20 = new Beverage(20, "Pilsner", "Cheddar", "Monterey Jack","","","");
+		beverageRepository.save(beverage20);
+
+		Beverage beverage21 = new Beverage(21, "Imperial Stout", "Cheddar", "Gouda","","","");
+		beverageRepository.save(beverage21);
+
+		Beverage beverage22 = new Beverage(22, "Barley Wine", "Roquefort",  "Cheddar","","","");
+		beverageRepository.save(beverage22);
+
+		Beverage beverage23 = new Beverage(23, "Triple", "Roquefort", "Cheddar","","","");
+		beverageRepository.save(beverage23);
 	}
 
 }

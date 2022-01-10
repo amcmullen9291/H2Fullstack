@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 function Menu() {
 
 let  [ Cheeses, setCheeses ] = useState(null);
 let [ Beverages , setBeverages ] = useState(null);
+
+let [ Filter, setFilter ] = useState(null);
+
+const DefaultCheeseList = Cheeses;
+const DefaultBeverageList = Beverages;
 
 const cheeseList = fetch('http://localhost:8080/cheeses/').then(resp => resp.json());
 const beverageList = fetch('http://localhost:8080/beverages/').then(resp => resp.json());
@@ -16,17 +20,24 @@ useEffect(() => {
 }, [])
 
 if((Cheeses) && Object.keys(Cheeses).length > 1){
-
-console.log("cheese list: ", Cheeses);
+console.log("Default cheese list set");
 }
 if((Beverages) && Object.keys(Beverages).length > 1){
 console.log("beverages list: ", Beverages);
+let DefaultBeverageList = Beverages;
+console.log("Default beverage list set");
 }
 
-function sortDrinks(e, cheeseName){
+
+async function SortDrinks(e, cheeseName){
     e.preventDefault();
     console.log("Cheese: ", cheeseName);
+    const newList = Beverages.filter(drink => (drink.cheese1Name === cheeseName)||(drink.cheese2Name === cheeseName)||(drink.cheese3Name === cheeseName)||(drink.cheese4Name === cheeseName)||(drink.cheese5Name === cheeseName));
+    console.log("New List:", newList);
+    setFilter(newList);
 }
+
+
 
 function sortCheeses(e, beverageName){
     e.preventDefault();
@@ -45,7 +56,7 @@ return (
                 {Cheeses.map((cheese, id) => (
                   <div key={id}>
                     <tr>
-                    <td><button className="name" onClick={(e) => {sortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
+                    <td><button className="name" onClick={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
                     </tr>
                   </div>
                 ))}
@@ -55,12 +66,12 @@ return (
             )}
         </div>
         <div>
-        {Beverages && (
+        {Filter && (
                       <div><table id="beverageList">
                         <thead>
                         </thead>
                         <tbody>
-                        {Beverages.map((beverage, id) => (
+                        {Filter.map((beverage, id) => (
                           <div key={id}>
                             <tr>
                             <td><button className="name" onClick={(e) => {sortCheeses(e, beverage.beverageName)}}>{beverage.beverageName}</button></td>

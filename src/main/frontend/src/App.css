@@ -1,7 +1,15 @@
 #beverageList{
 float: left;
+border: 2px solid orange;
+width: 150px;
+margin-right: 20px;
 }
 
 #cheeseList{
 float: left;
+margin-left: 50px;
+}
+
+button{
+border: 2px solid red;
 }

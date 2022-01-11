@@ -19,7 +19,7 @@ useEffect(() => {
     Promise.all([beverageList, cheeseList]).then(data => { setBeverages(data[0]); setCheeses(data[1]); setDefaultValue(data[1]) })
 }, [])
 
-function ShowCheeseDetails(e){
+function ShowCheeseDetails(e, cheeseID){
 e.preventDefault();
 document.getElementById("cheeseName").style.pointerEvents = "none";
 if(running === true){
@@ -27,7 +27,7 @@ console.log("function already running.")
 console.log(running);
 setTimeout(() => {
              setRunning(false);
-         }, 3000);
+         }, 7000);
 return;
 }
 else{
@@ -37,7 +37,9 @@ document.getElementsByClassName("name").disabled = "true";
  setTimeout(() => {
             document.getElementById("beverageList").style.display = "none";
             document.getElementById("cheeseInfo").style.display = "block";
+            let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
              console.log('5 seconds have elapsed');
+             console.log("Chosen cheese: ", cheeseDetails.cheeseName);
          }, 5000);
          }
  };
@@ -91,7 +93,7 @@ return (
                 {Cheeses.map((cheese, id) => (
                   <div key={id}>
                     <tr>
-                    <td><button id="cheeseName" className="name" onMouseEnter={(e) => {ShowCheeseDetails(e)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onClick={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
+                    <td><button id="cheeseName" className="name" onMouseEnter={(e) => {ShowCheeseDetails(e, cheese.id)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onClick={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
                     </tr>
                   </div>
                 ))}

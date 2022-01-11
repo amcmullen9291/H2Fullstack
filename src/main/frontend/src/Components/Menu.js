@@ -6,10 +6,7 @@ function Menu() {
 let  [ Cheeses, setCheeses ] = useState(null);
 let [ Beverages , setBeverages ] = useState(null);
 let [ defaultValue, setDefaultValue ] = useState(null);
-
-
 let [ Filter, setFilter ] = useState(null);
-let [ cheeseListings, setCheeseListings ]  = useState(Cheeses);
 
 const cheeseList = fetch('http://localhost:8080/cheeses/').then(resp => resp.json());
 const beverageList = fetch('http://localhost:8080/beverages/').then(resp => resp.json());
@@ -99,16 +96,7 @@ const mapStateToProps = (state) => {
       Cheeses: state.Cheeses,
       Beverages: state.Beverages
     }
-
   }
 
-   const mapDispatchToProps = (dispatch) => {
-     return{
-       Cheeses: (cheeses) => { dispatch({type: 'SET_CHEESES', cheeses})},
-       Beverages: (beverages) => { dispatch({type: 'SET_BEVERAGES', beverages})},
-     }
-   }
 
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(Menu);
+export default connect(mapStateToProps, null)(Menu);

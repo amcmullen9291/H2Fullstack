@@ -38,10 +38,11 @@ document.getElementsByClassName("name").disabled = "true";
             document.getElementById("beverageList").style.display = "none";
             document.getElementById("cheeseInfo").style.display = "block";
             let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
-             console.log('5 seconds have elapsed');
              console.log("Chosen cheese: ", cheeseDetails.cheeseName);
+             clearInterval();
          }, 5000);
          }
+
  };
 
 function returnBeveragesTable(e){
@@ -76,7 +77,6 @@ function resetTable(e){
     e.preventDefault();
     window.location.reload();
 }
-
 
 return (
         <>

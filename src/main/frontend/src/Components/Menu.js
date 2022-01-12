@@ -20,8 +20,6 @@ function ShowCheeseDetails(e, cheeseID){
 e.preventDefault();
 document.getElementById("cheeseName").style.pointerEvents = "none";
 if(running === true){
-console.log("function already running.")
-console.log(running);
 setTimeout(() => {
              setRunning(false);
          }, 7000);
@@ -36,10 +34,15 @@ document.getElementsByClassName("name").disabled = "true";
             document.getElementById("cheeseInfo").style.display = "block";
             let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
              console.log("Chosen cheese: ", cheeseDetails.cheeseName);
+             let namedCheese = document.getElementById('cheeseInfoName');
+             namedCheese.innerText = cheeseDetails.cheeseName;
+             let namedCheeseCountry = document.getElementById('cheeseInfoCountry');
+             namedCheeseCountry.innerText = cheeseDetails.countryOfOrigin;
+             let namedCheeseNotes = document.getElementById('cheeseInfoTaste');
+             namedCheeseNotes.innerText = cheeseDetails.taste;
              clearInterval();
-         }, 5000);
+         }, 2000);
          }
-
  };
 
 function returnBeveragesTable(e){
@@ -51,16 +54,12 @@ e.preventDefault();
              setRunning(false);
              document.getElementsByClassName("name").disabled = "false";
          }, 3000);
-    console.log("count reset");
-
 }
 
 
 async function SortDrinks(e, cheeseName){
     e.preventDefault();
-    console.log("Cheese: ", cheeseName);
     const newList = Beverages.filter(drink => (drink.cheese1Name === cheeseName)||(drink.cheese2Name === cheeseName)||(drink.cheese3Name === cheeseName)||(drink.cheese4Name === cheeseName)||(drink.cheese5Name === cheeseName));
-    console.log("New List:", newList);
     setFilter(newList);
 }
 
@@ -101,7 +100,11 @@ return (
         </div>
         <div>
         <div id="cheeseInfo">
-        <span>Cheese Info</span>
+        <span id="cheeseInfoName"></span>
+        <hr/>
+        <span id="cheeseInfoCountry"></span>
+        <hr/>
+        <span id="cheeseInfoTaste"></span>
         </div>
         {Filter && (
                       <div><table id="beverageList">

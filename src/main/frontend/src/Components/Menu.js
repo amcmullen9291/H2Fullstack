@@ -48,9 +48,9 @@ e.preventDefault();
     document.getElementById("cheeseName").style.pointerEvents = "none";
     document.getElementById("beverageList").style.display = "block";
     document.getElementById("cheeseInfo").style.display = "none";
+    document.getElementsByClassName("name").disabled = "false";
     setTimeout(() => {
              setRunning(false);
-             document.getElementsByClassName("name").disabled = "false";
          }, 3000);
 }
 

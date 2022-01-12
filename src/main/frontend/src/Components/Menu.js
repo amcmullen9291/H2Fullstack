@@ -1,7 +1,4 @@
 import { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
-
-
 
 function Menu() {
 
@@ -93,7 +90,7 @@ return (
                 {Cheeses.map((cheese, id) => (
                   <div key={id}>
                     <tr>
-                    <td><button id="cheeseName" className="name" onMouseEnter={(e) => {ShowCheeseDetails(e, cheese.id)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onClick={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
+                    <td><button id="cheeseName" className="name" onClick={(e) => {ShowCheeseDetails(e, cheese.id)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onMouseEnter={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
                     </tr>
                   </div>
                 ))}
@@ -132,11 +129,4 @@ return (
     )
 }
 
-const mapStateToProps = (state) => {
-    return {
-      Cheeses: state.Cheeses,
-      Beverages: state.Beverages
-    }
-  }
-
-export default connect(mapStateToProps, null)(Menu);
+export default Menu;

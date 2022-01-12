@@ -18,7 +18,6 @@ useEffect(() => {
 
 function ShowCheeseDetails(e, cheeseID){
 e.preventDefault();
-document.getElementById("cheeseName").style.pointerEvents = "none";
 if(running === true){
 setTimeout(() => {
              setRunning(false);
@@ -27,7 +26,6 @@ return;
 }
 else{
 setRunning(true);
-console.log("starting function");
 document.getElementsByClassName("name").disabled = "true";
  setTimeout(() => {
             document.getElementById("beverageList").style.display = "none";

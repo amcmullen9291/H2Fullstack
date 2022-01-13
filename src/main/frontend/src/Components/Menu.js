@@ -31,7 +31,6 @@ document.getElementsByClassName("name").disabled = "true";
             document.getElementById("beverageList").style.display = "none";
             document.getElementById("cheeseInfo").style.display = "block";
             let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
-             console.log("Chosen cheese: ", cheeseDetails.cheeseName);
              let namedCheese = document.getElementById('cheeseInfoName');
              namedCheese.innerText = cheeseDetails.cheeseName;
              let namedCheeseCountry = document.getElementById('cheeseInfoCountry');
@@ -85,11 +84,9 @@ return (
                 </thead>
                 <tbody>
                 {Cheeses.map((cheese, id) => (
-                  <div key={id}>
-                    <tr>
+                    <tr key={cheese.id}>
                     <td><button id="cheeseName" className="name" onClick={(e) => {ShowCheeseDetails(e, cheese.id)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onMouseEnter={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
                     </tr>
-                  </div>
                 ))}
                 </tbody>
         </table>
@@ -110,11 +107,9 @@ return (
                         </thead>
                         <tbody>
                         {Filter.map((beverage, id) => (
-                          <div key={id}>
-                            <tr>
+                            <tr key={beverage.id}>
                             <td><button className="drinkName" onClick={(e) => {sortCheeses(e, beverage.beverageName)}}>{beverage.beverageName}</button></td>
                             </tr>
-                          </div>
                         ))}
                         </tbody>
                 </table>

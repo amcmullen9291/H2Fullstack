@@ -56,6 +56,7 @@ e.preventDefault();
              setRunning(false);
          }, 3000);
          if(document.getElementById('bottomArea')){
+             document.getElementById('bottomWords').innerText = "";
              document.getElementById('bottomArea').id = 'bottomAreaHidden';
          }
 }

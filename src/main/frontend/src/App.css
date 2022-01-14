@@ -99,6 +99,7 @@ color: #676767;
    opacity: 0.95;
    /*background-image: -webkit-linear-gradient(rgb(60, 60, 60), rgb(20, 20, 20));*/
    box-shadow: inset 0 1px 0px rgb(95, 95, 95);
+   transition: width 2s, height 2s, background-color 2s, transform 2s;
       animation:animateBottom 3s;
 }
 
@@ -108,7 +109,12 @@ color: #676767;
 }
 
   #bottomAreaHidden{
-  visibility: hidden;
+  background-color: transparent;
+      width: 200px;
+      height: 200px;
+      transform: rotate(180deg);
+      transition: transform 250ms, opacity 400ms;
+  /*visibility: hidden;*/
   }
 
   #bottomPointer{

@@ -83,3 +83,49 @@ color: #253529;
 #cheeseInfoTaste{
 color: #676767;
 }
+
+#bottomArea{
+   position: fixed;
+   bottom: 0px;
+   left: 0px;
+   overflow: none;
+   width: 615px;
+   margin-left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+   height: 125px;
+   border-top: 1px solid #060606;
+   border-bottom: 1px solid #060606;
+   opacity: 0.95;
+   /*background-image: -webkit-linear-gradient(rgb(60, 60, 60), rgb(20, 20, 20));*/
+   box-shadow: inset 0 1px 0px rgb(95, 95, 95);
+      animation:animateBottom 3s;
+}
+
+@keyframes animateBottom{
+    from{bottom:-300px;opacity:0}
+    to{bottom:0;opacity:1}
+}
+
+  #bottomAreaHidden{
+  visibility: hidden;
+  }
+
+  #bottomPointer{
+    width:0px;
+    height: 0px;
+    position: fixed;
+    bottom: 10%;
+    background-color: none;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-left: 50px solid orange;
+    margin-left: 5%;
+  }
+
+  #bottomWords{
+  margin-left: 15%;
+  color: white;
+  position: absolute;
+  }

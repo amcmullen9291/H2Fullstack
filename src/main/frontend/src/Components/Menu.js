@@ -40,6 +40,10 @@ document.getElementsByClassName("name").disabled = "true";
              clearInterval();
          }, 2000);
          }
+         let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
+         let namedCheeseNotes = document.getElementById('bottomWords');
+         namedCheeseNotes.innerText = ("Best use(s): " + cheeseDetails.bestUses + " " + cheeseDetails.bestUses);
+         document.getElementById('bottomAreaHidden').id = 'bottomArea';
  };
 
 function returnBeveragesTable(e){
@@ -51,6 +55,9 @@ e.preventDefault();
     setTimeout(() => {
              setRunning(false);
          }, 3000);
+         if(document.getElementById('bottomArea')){
+             document.getElementById('bottomArea').id = 'bottomAreaHidden';
+         }
 }
 
 
@@ -83,7 +90,7 @@ return (
                 <thead>
                 </thead>
                 <tbody>
-                {Cheeses.map((cheese, id) => (
+                {Cheeses.map((cheese, id ) => (
                     <tr key={cheese.id}>
                     <td><button id="cheeseName" className="name" onClick={(e) => {ShowCheeseDetails(e, cheese.id)}}  onMouseOut={(e) => {returnBeveragesTable(e)}} onMouseEnter={(e) => {SortDrinks(e, cheese.cheeseName)}}>{cheese.cheeseName}</button></td>
                     </tr>
@@ -120,6 +127,10 @@ return (
         <br/>
         <center><button onClick={(e) => {resetTable(e)}}>Reset List</button></center>
         </div>
+        </div>
+        <div id="bottomAreaHidden">
+        <span id="bottomPointer"></span>
+        <span id="bottomWords"></span><br/>
         </div>
         </>
     )

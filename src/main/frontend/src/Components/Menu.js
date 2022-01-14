@@ -42,7 +42,7 @@ document.getElementsByClassName("name").disabled = "true";
          }
          let cheeseDetails = Cheeses.find(x => x.id === cheeseID);
          let namedCheeseNotes = document.getElementById('bottomWords');
-         namedCheeseNotes.innerText = ("Best use(s): " + cheeseDetails.bestUses + " " + cheeseDetails.bestUses);
+         namedCheeseNotes.innerText = ("Type of milk: " + cheeseDetails.typeOfMilk + ". Best uses:  " + cheeseDetails.bestUses);
          document.getElementById('bottomAreaHidden').id = 'bottomArea';
  };
 
